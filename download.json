@@ -1,0 +1,53 @@
+{
+    "openapi": "3.0.2",
+    "info": {
+        "title": "Login",
+        "version": "1.0.0",
+        "description": "Login info"
+    },
+    "paths": {
+        "/user": {
+            "summary": "Adding a new user",
+            "description": "Adding a new user",
+            "post": {
+                "requestBody": {
+                    "description": "Adding a new user",
+                    "content": {
+                        "application/json": {
+                            "schema": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "required": false
+                },
+                "responses": {
+                    "200": {
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "string"
+                                }
+                            }
+                        },
+                        "description": "Adding a new user"
+                    }
+                },
+                "summary": "Adding a new user",
+                "description": "Adding a new user"
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "username": {
+                "description": "user name",
+                "type": "string"
+            },
+            "password": {
+                "description": "password",
+                "type": "string"
+            }
+        }
+    }
+}
