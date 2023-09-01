@@ -15,7 +15,12 @@
                     "content": {
                         "application/json": {
                             "schema": {
-                                "type": "string"
+                                "$ref": "#/components/schemas/username"
+                            }
+                        },
+                        "json": {
+                            "schema": {
+                                "$ref": "#/components/schemas/password"
                             }
                         }
                     },
